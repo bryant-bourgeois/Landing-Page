@@ -59,13 +59,24 @@
 }
 
 .card-box {
-  border: blue solid 2px;
+  border: #3882f6 solid 2px;
   height: 250px;
   width: 250px;
 }
 
 .section-2 {
   background-color: #e5e7eb;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-box {
+  background-color: #3882f6;
+  width: 600px;
 }
 
 .footer {
