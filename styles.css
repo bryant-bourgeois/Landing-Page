@@ -15,6 +15,7 @@
 .header {
   background-color: #1f2937;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 400px;
@@ -23,39 +24,85 @@
 .header-sizer {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 850px;
+}
+
+.header-fix {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
 }
 
 .header-top {
+  display: flex;
+  width: 850px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-links {
   display: flex;
-  list-style: none;
+  gap: 1rem;
 }
 
 .header-links li {
   text-decoration: none;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: #f9faf8;
 }
 
 .header-content {
   display: flex;
+
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+}
+
+.header-top p {
+  font-size: 24px;
+  color: #f9faf8;
 }
 
 .header-content-left {
   flex: 0 1 auto;
 }
 
+.header-content-left h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.header-content-left p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
 .sign-up {
   color: #e5e7eb;
   background-color: #3882f6;
   font-weight: bold;
-  padding: 6px;
+  padding: 6px 18px;
   border-radius: 5px;
   border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.image-placeholder {
+  background-color: grey;
+  width: 700px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
 }
 
 .section-1 {
@@ -63,7 +110,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   height: 400px;
 }
 
@@ -80,18 +127,19 @@
 
 .testimonial {
   font-size: 36px;
-  font-weight: light;
+  font-weight: 100;
   font-style: italic;
 }
 
 .testimonial-credit {
   align-self: flex-end;
+  font-weight: bold;
 }
 
 .card-container {
   display: flex;
   width: 250px;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -116,15 +164,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
 }
 
 .blue-box {
   background-color: #3882f6;
-  width: 600px;
+  width: 850px;
   height: 150px;
   border-radius: 15px;
-  padding: 16px;
+  padding: 10px 90px;
   margin: 30px 0;
   color: #e5e7eb;
   display: flex;
@@ -144,8 +192,9 @@
   border: #e5e7eb solid 1px;
   background-color: #3882f6;
   border-radius: 5px;
-  padding: 6px;
+  padding: 6px 18px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .footer {
